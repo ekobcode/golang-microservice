@@ -272,17 +272,4 @@ go test ./test/...
 
 ## 🧩 License
 
-MIT License © 2025 [Eko Budiarto](https://github.com/ekobudiarto)
-
----
-
-> 💡 **Pro Tips for Production**
->
-> * Add observability (Prometheus + Grafana)
-> * Implement graceful shutdown with `context.Context`
-> * Use `Viper` for advanced config management
-> * Add JWT or OAuth2 authentication layer
-> * Set up CI/CD pipeline (GitHub Actions, GitLab, or Bamboo)
-> * Container orchestration (Kubernetes, Helm, or Nomad)
-
-```
+MIT License © 2025 [Eko Budiarto](https://github.com/ekobcode)
