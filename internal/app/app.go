@@ -26,7 +26,7 @@ func NewApp(cfg *config.Config, logger *zap.SugaredLogger, db *sql.DB) *App {
 func (a *App) Run() {
 	userRepo := repository.NewUserRepository(a.db)
 	userUC := usecase.NewUserUsecase(userRepo)
-	userHandler := handler.NewUserHandler(userUC)
+	userHandler := handler.NewUserHandler(userUC, a.logger)
 
 	router := httpDelivery.NewRouter(userHandler, a.cfg.APIKey)
 

@@ -10,6 +10,10 @@ import (
 func NewRouter(userHandler *handler.UserHandler, apiKey string) *gin.Engine {
 	r := gin.Default()
 
+	// Add transaction ID middleware first
+	r.Use(middleware.TransactionIDMiddleware())
+
+	// API key auth
 	r.Use(middleware.APIKeyAuth(apiKey))
 
 	v1 := r.Group("/api/v1")
