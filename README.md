@@ -21,8 +21,7 @@ This project is designed to be testable, maintainable, and production-ready — 
 
 ## 🧱 Project Structure
 
-```
-
+```bash
 golang-microservice/
 ├── cmd/
 │   └── server/
@@ -72,7 +71,6 @@ golang-microservice/
 ├── Dockerfile
 └── README.md
 
-````
 
 ---
 
